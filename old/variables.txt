@@ -1,0 +1,30 @@
+Zipcode one-hot encoded, house price to log scale 
+
+* df3
+* X_train1_scaled, X_test1_scaled, y_train_scaled, y_test_scaled
+* lm3.fit(X_train1_scaled, y_train_scaled)
+* predictions3 = lm.predict(X_test1_scaled)
+
+
+oX_train
+oX_test
+oy_train_scaled
+oy_test_scaled
+
+
+Raw
+R2_score: 0.65
+RMSE: 211865.0
+MAE: 138323.0
+Zipcode one-hot encoding
+R2_score: 0.8
+RMSE: 162054.0
+MAE: 97463.0
+Zipcode one-hot encoding + scaling - slightly improved but similar
+R2_score: 0.8
+RMSE: 160489.0
+MAE: 96737.0
+Zipcode one-hot encoding + scaling + house price to log scale
+R2_score: 0.87
+Zipcode one-hot encoding + scaling + house price to log scale + remove outliars
+R2_score: 0.83
